@@ -1,0 +1,22 @@
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: single-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: goods
+          uri: lb://goods
+          predicates:
+            - Path=/goods/**
+        - id: order
+          uri: lb://order
+          predicates:
+            - Path=/order/**
