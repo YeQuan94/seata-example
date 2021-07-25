@@ -164,7 +164,7 @@ config {
 
 因为是使用 Nacos 作为 Seata 配置中心，因此不需要修改 file.conf 文件
 
-这里需要把配置文件导入到 Nacos 上，可以参考 Seata 官网文档（http://seata.io/zh-cn/docs/user/configuration/nacos.html）
+这里需要把配置文件导入到 Nacos 上，可以参考 Seata 官网文档，http://seata.io/zh-cn/docs/user/configuration/nacos.html
 
 （这个步骤比较麻烦，如果不愿意的话，也可以继续使用 file.conf 作为配置，效果也是一样的）
 
@@ -318,5 +318,5 @@ seata:
 
 #### 8.到这里就已经算集群部署完毕，分布式事务正常运行
 
-恭喜恭喜~🎉🎉🎉🎉~
+恭喜恭喜🎉🎉🎉🎉
 
