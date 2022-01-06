@@ -240,7 +240,7 @@ PS：本工程下的 seata-server-1.4.2 就是已经配置好的服务，可以�
 
 这里需要注意看，一般来说项目启动后疯狂报错，或者注册不到 Seata 上，这些都是因为配置没有对的原因！！
 
-顺便说一下，Seata 数据源和项目数据源要保持一致
+顺便说一下，Seata 数据源和项目数据源要保持一致（Seata 默认支持数据源是：druid，如果你在项目中使用了其他数据源，请在 file.conf 文件中修改 store.db.datasource 属性）
 
 application.yml
 

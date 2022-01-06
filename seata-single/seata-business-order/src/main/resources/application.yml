@@ -32,7 +32,11 @@ seata:
       # key = {tx-service-group}，需要对应
       # value = {seataApplicationName}，Seata 服务注册名称
       order-tx-group: seata-server
+    # 下面这两个属性是用于直接连接 Seata，当使用直连方式时，需要把 registry 三个属性注释掉
+#    grouplist:
+#      seata-server: 127.0.0.1:8091
   registry:
+    # type 属性默认是：file
     type: eureka
     eureka:
       service-url: http://localhost:8761/eureka
